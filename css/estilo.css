@@ -1,0 +1,22 @@
+*{margin: 0; padding: 0; box-sizing: border-box; outline: none;}
+
+.principal {
+    display:grid;
+    grid-template-columns: 75% 25%;/*Estou informando que quero 2 colunas*/
+    grid-template-areas: 'cabecalho formulario'
+                          'principal formulario'
+                           'rodape formulario';
+height:100vh; font-family: Arial;
+}
+/* CABEÇALHO */ 
+header{grid-area:cabecalho;}
+.logo{display:flex; align-items: center; padding: 10px 30px}
+.logo img{width: 80px;}
+.logo h1{font-family: Verdana; color: #274083;}
+/*PRINCIPAL*/
+main{grid-area:principal;}
+/*FORMULÁRIO*/
+aside{grid-area:formulario;}
+/*RODAPÉ*/
+footer{grid-area: rodape;}
+
